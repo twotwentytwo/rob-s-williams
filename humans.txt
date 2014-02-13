@@ -3,11 +3,12 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Tom Kershaw -- Developer -- @tw0tw3ntytw0
+    Rob Williams -- Designer -- @rob_otter
 
 # THANKS
 
-    <name>
+    Rob Williams - for designing the website - good work! 
 
 # TECHNOLOGY COLOPHON
 

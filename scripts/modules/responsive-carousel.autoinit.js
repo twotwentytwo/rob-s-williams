@@ -7,9 +7,8 @@
  * Licensed under the MIT, GPL licenses.
  */
 
-(function( $ ) {
-	// DOM-ready auto-init
-	$( function(){
+(function($) {
+	$(function(){
 		$( ".carousel" ).carousel();
-	} );
-}( jQuery ));
+	});
+}(jQuery));
