@@ -1,0 +1,3 @@
+$(function() {
+  $(".rw-content").snapscroll();
+});
