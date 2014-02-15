@@ -1,0 +1,11 @@
+
+bootstrap.js
+----------------
+../vendor/jquery-1.10.2.min.js
+info.js
+menu.js
+jquery.scroll_to.js
+jquery.snapscroll.js
+responsive-carousel.js
+template.js
+bootstrap.js
