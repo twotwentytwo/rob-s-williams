@@ -1,9 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    breakup (0.2.1)
-      compass (>= 0.12.2)
-      sass (>= 3.2.0)
     chunky_png (1.2.9)
     compass (0.12.2)
       chunky_png (~> 1.2)
@@ -16,6 +13,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  breakup (~> 0.2.0)
   compass (~> 0.12.2)
   sass (~> 3.2.8)

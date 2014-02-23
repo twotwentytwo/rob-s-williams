@@ -1,0 +1,1551 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* Base */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #ededed;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    font-weight: normal;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #000;
+}
+
+img {
+    width: 100%;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%; 
+}
+
+
+.vertical-carousel-navigation {
+    position: fixed;
+    right: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 1rem;
+    height: 6rem;
+    margin: auto;
+    z-index: 101;
+    font-size: 1rem;
+    text-align: center; 
+}
+
+.vertical-carousel-navigation ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    line-height: 1; 
+}
+
+.vertical-carousel-navigation ul li {
+    height: 10px;
+    padding: 5px 0; 
+}
+
+.vertical-carousel-navigation ul a {
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    margin: 0 auto;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease; 
+}
+
+.vertical-carousel-navigation ul a.activated {
+    background: transparent;
+    background: rgba(0, 0, 0, 0.2); 
+    width: 8px;
+    height: 8px; 
+}
+
+
+/* Homepage */
+
+.rw-main-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+    position: absolute;
+    padding: 2.6rem 3rem;
+    z-index: 2;
+}
+
+.rw-main-menu .mm-item {
+    line-height: 1.6rem;
+}
+
+.rw-main-menu a, 
+.rw-main-menu a:link, 
+.rw-main-menu a:visited {
+    text-decoration: none;
+}
+
+.rw-main-menu a:hover, 
+.rw-main-menu a:active {
+    text-decoration: underline;
+}
+
+.homepage {
+    height: 100%;
+    width: 100%;
+}
+
+.mm-info {
+    width: 400px;
+    z-index: 1;
+    left: -1000px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.mm-info .about-content, 
+.mm-info .contact-content, 
+.mm-info .projects-content {
+    padding-top: 10.3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+}
+
+.pc-projects {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.pc-project {
+    line-height: 1.6rem;
+}
+
+.pc-project a {
+    text-decoration: none;
+}
+
+.mm-close {
+    position: absolute;
+    bottom: 8rem;
+    left: 3rem;
+}
+
+.contact-content ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.mm-info p {
+    padding-bottom: 1rem;
+}
+
+.hp-details {
+    width: 657px;
+    height: 200px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hpd-tagline {
+    text-align: center;
+    margin-top: 1.6rem;
+    font-size: 1.4em;
+}
+
+.hpd-email-cta {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.4em;
+}
+
+.hpd-view-projects {
+    position: absolute;
+    bottom: 8rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hpd-view-projects a {
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;    
+    border-top: 20px solid #000;
+    position: absolute;
+    bottom: 6rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+/* Projects */
+
+.rw-content {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rw-page {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.project {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.pjt-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+    position: absolute;
+    padding: 2.6rem 3rem;
+    z-index: 2;
+}
+
+.pjt-menu .pm-item {
+    line-height: 1.6rem;
+}
+
+.pjt-menu a, 
+.pjt-menu a:link, 
+.pjt-menu a:visited {
+    text-decoration: none;
+}
+
+.pjt-menu a:hover, 
+.pjt-menu a:active {
+    text-decoration: underline;
+}
+
+.pm-item {
+    padding: 0;
+    margin: 0;
+}
+
+.pjt-info {
+    width: 400px;
+    z-index: 1;
+    left: -1000px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.pjt-info-content {
+    padding-top: 10.3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+}
+
+.pjt-info p {
+    padding-bottom: 1rem;
+}
+
+.pjt-images {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:0;
+    margin:0;
+    z-index: -1;
+}
+
+.pjt-image {
+    padding:0;
+    margin:0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pjt-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+#ben_eine .pjt-details {
+    width: 476px;
+    height: 80px;
+    background: url(../img/projects/2_EINE/BEN_EINE.png) 0 0 no-repeat;
+}
+
+#ben_eine .portfolio-1 {
+    background: url(../img/projects/2_EINE/BENEINE-1.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#ben_eine .portfolio-2 {
+    background: url(../img/projects/2_EINE/BENEINE-2.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#ben_eine .portfolio-3 {
+    background: url(../img/projects/2_EINE/BENEINE-3.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#ben_eine .portfolio-4 {
+    background: url(../img/projects/2_EINE/BENEINE-4.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#ben_eine .portfolio-5 {
+    background: url(../img/projects/2_EINE/BENEINE-5.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#sculptivate .pjt-details {
+    width: 875px;
+    height: 100px;
+    background: url(../img/projects/3_SCULPTIVATE/SCULPTIVATE.png) 0 0 no-repeat;
+}
+
+#sculptivate .portfolio-1 {
+    background: url(../img/projects/3_SCULPTIVATE/SCULPTIVATE-1.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#sculptivate .portfolio-2 {
+    background: url(../img/projects/3_SCULPTIVATE/SCULPTIVATE-2.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#sculptivate .portfolio-3 {
+    background: url(../img/projects/3_SCULPTIVATE/SCULPTIVATE-3.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#sculptivate .portfolio-4 {
+    background: url(../img/projects/3_SCULPTIVATE/SCULPTIVATE-4.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#sculptivate .portfolio-5 {
+    background: url(../img/projects/3_SCULPTIVATE/SCULPTIVATE-5.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#final_fantasy .pjt-details {
+    width: 817px;
+    height: 80px;
+    background: url(../img/projects/5_FINAL_FANTASY/FINAL_FANTASY.png) 0 0 no-repeat;
+}
+
+#final_fantasy .portfolio-1 {
+    background: url(../img/projects/5_FINAL_FANTASY/FINAL_FANTASY-5.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#final_fantasy .portfolio-2 {
+    background: url(../img/projects/5_FINAL_FANTASY/FINAL_FANTASY-2.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#final_fantasy .portfolio-3 {
+    background: url(../img/projects/5_FINAL_FANTASY/FINAL_FANTASY-3.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#final_fantasy .portfolio-4 {
+    background: url(../img/projects/5_FINAL_FANTASY/FINAL_FANTASY-4.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#final_fantasy .portfolio-5 {
+    background: url(../img/projects/5_FINAL_FANTASY/FINAL_FANTASY-1.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#invadercade .pjt-details {
+    width: 878px;
+    height: 93px; 
+    background: url(../img/projects/4_INVADERCADE/INVADERCADE.png) 0 0 no-repeat;
+}
+
+#invadercade .portfolio-1 {
+    background: url(../img/projects/4_INVADERCADE/INVADERCADE-1.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#invadercade .portfolio-2 {
+    background: url(../img/projects/4_INVADERCADE/INVADERCADE-2.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#invadercade .portfolio-3 {
+    background: url(../img/projects/4_INVADERCADE/INVADERCADE-3.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#invadercade .portfolio-4 {
+    background: url(../img/projects/4_INVADERCADE/INVADERCADE-4.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#craig .pjt-details {
+    width: 336px;
+    height: 80px;
+    background: url(../img/projects/6_CRAIG/CRAIG.png) 0 0 no-repeat;
+}
+
+#craig .portfolio-1 {
+    background: url(../img/projects/6_CRAIG/CRAIG-4.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#craig .portfolio-2 {
+    background: url(../img/projects/6_CRAIG/CRAIG-2.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#craig .portfolio-3 {
+    background: url(../img/projects/6_CRAIG/CRAIG-3.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#craig .portfolio-4 {
+    background: url(../img/projects/6_CRAIG/CRAIG-1.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* videos */
+
+.video {
+    height: 100%;
+    width: 100%;
+}
+
+/* carousel */
+
+.carousel-nav {
+    position: absolute;
+    bottom: 48%;
+    z-index: 4;
+    width: 100%;
+    opacity: 0;
+}
+.carousel-nav a {
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    bottom: 0;
+}
+.carousel-nav a.prev {
+    left: 3.6rem;
+}
+.carousel-nav a.next {
+    right: 3.6rem;
+}
+.image {
+    width: 100%;
+    height: 100%;
+}
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* snappish */
+
+.snappish-wrapper {
+    float: left;
+    z-index: 10;
+    overflow: hidden; 
+}
+.snappish-main {
+    width: 100%;
+    z-index: 9;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform; 
+}
+.snappish-1-slides {
+    height: 100%; 
+}
+.snappish-1-slides .snappish-slide {
+    height: 100%; 
+}
+.snappish-2-slides {
+    height: 200%; 
+}
+.snappish-2-slides .snappish-slide {
+    height: 50%; 
+}
+.snappish-3-slides {
+    height: 300%; 
+}
+.snappish-3-slides .snappish-slide {
+    height: 33.33333%; 
+}
+.snappish-4-slides {
+    height: 400%; 
+}
+.snappish-4-slides .snappish-slide {
+    height: 25%; 
+}
+.snappish-5-slides {
+    height: 500%; 
+}
+.snappish-5-slides .snappish-slide {
+    height: 20%; 
+}
+.snappish-6-slides {
+    height: 600%; 
+}
+.snappish-6-slides .snappish-slide {
+    height: 16.66667%;
+}
+.snappish-7-slides {
+    height: 700%; 
+}
+.snappish-7-slides .snappish-slide {
+    height: 14.28571%; 
+}
+.snappish-8-slides {
+    height: 800%; 
+}
+.snappish-8-slides .snappish-slide {
+    height: 12.5%; 
+}
+.snappish-9-slides {
+    height: 900%; 
+}
+.snappish-9-slides .snappish-slide {
+    height: 11.11111%; 
+}
+.snappish-10-slides {
+    height: 1000%; 
+}
+.snappish-10-slides .snappish-slide {
+    height: 10%; 
+}
+.snappish-slide {
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0); 
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 0px) and (max-width : 599px) {
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    .vertical-carousel-navigation {
+        display: none;
+    }
+
+    .rw-main-menu {
+        padding: 1rem;
+    }
+    .rw-main-menu .mm-item {
+        font-size: 0.8em;
+        line-height: 2em;
+    }
+    .hpd-tagline {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 0.8em;
+    }
+    .hpd-email-cta {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 0.8em;
+    }
+    .hp-details {
+        width: 90%;
+        margin: auto;
+        vertical-align: middle;
+    }
+    .hpd-view-projects {
+        font-size: 0.8em;
+    }
+    .hpd-view-projects a {
+        font-size: 0.8rem;
+    }
+    .hpd-view-projects {
+        bottom: 2rem;
+    }
+    .arrow-down { 
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;    
+        border-top: 10px solid #000;
+        bottom: 1rem;
+    }
+    .mm-info {
+        width: 100%;
+    }
+    .mm-info .about-content, 
+    .mm-info .contact-content, 
+    .mm-info .projects-content {
+        padding-top: 8rem;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+    .mm-info p, 
+    .mm-info li {
+        font-size: 0.8rem;
+    }
+    .mm-close {
+        left: 1rem;
+        bottom: 1rem;
+    }
+    .pjt-menu {
+        padding: 1rem;
+    }
+    .pjt-menu .pm-item {
+        font-size: 0.8rem;
+        line-height: 1.6rem;
+    }
+    .pjt-info {
+        width: 100%;
+    }
+    .pjt-info-content {
+        padding-top: 8rem;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+    .pjt-info p {
+        padding-bottom: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .carousel-nav {
+        bottom: 1rem;
+        font-size: 0.8rem;
+    }
+    .carousel-nav a.prev {
+        left: 1rem;
+    }
+    .carousel-nav a.next {
+        right: 1rem;
+    }
+
+    #ben_eine .pjt-details {
+        width: 144px;
+        height: 105px;
+        background: url(../img/projects/2_EINE/BEN_EINE_340px.png) 0 0 no-repeat;
+    }
+
+    #sculptivate .pjt-details {
+        width: 234px;
+        height: 106px;
+        background: url(../img/projects/3_SCULPTIVATE/SCULPTIVATE_340px.png) 0 0 no-repeat;
+    }
+
+    #final_fantasy .pjt-details {
+        width: 300px;
+        height: 105px;
+        background: url(../img/projects/5_FINAL_FANTASY/FINAL_FANTASY_340px.png) 0 0 no-repeat;
+    }
+
+    #invadercade .pjt-details {
+        width: 300px;
+        height: 104px; 
+        background: url(../img/projects/4_INVADERCADE/INVADERCADE_340px.png) 0 0 no-repeat;
+    }
+
+    #craig .pjt-details {
+        width: 206px;
+        height: 50px;
+        background: url(../img/projects/6_CRAIG/CRAIG_340px.png) 0 0 no-repeat;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 480px) and (max-width : 599px) {
+    .rw-main-menu .mm-item {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 1rem; 
+    }
+    .hpd-tagline {
+        font-size: 1rem;
+    }
+    .hpd-email-cta {
+        font-size: 1rem;
+    }
+    .hpd-view-projects {
+        font-size: 1rem;
+    }
+    .pjt-menu .pm-item {
+        font-size: 1rem;
+    }
+    .pjt-info p {
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .mm-info p, 
+    .mm-info li {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile (portrait) ----------- */
+@media only screen and (min-width : 0px) and (max-width : 599px) and (orientation : portrait) {
+    #ben_eine .portfolio-1 {
+        background: url(../img/projects/2_EINE/mobile_portrait/EINE_360x640-1.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #ben_eine .portfolio-2 {
+        background: url(../img/projects/2_EINE/mobile_portrait/EINE_360x640-2.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #ben_eine .portfolio-3 {
+        background: url(../img/projects/2_EINE/mobile_portrait/EINE_360x640-3.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #ben_eine .portfolio-4 {
+        background: url(../img/projects/2_EINE/mobile_portrait/EINE_360x640-4.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #ben_eine .portfolio-5 {
+        background: url(../img/projects/2_EINE/mobile_portrait/EINE_360x640-5.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #sculptivate .portfolio-1 {
+        background: url(../img/projects/3_SCULPTIVATE/mobile_portrait/SCULPTIVATE_360x640-1.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #sculptivate .portfolio-2 {
+        background: url(../img/projects/3_SCULPTIVATE/mobile_portrait/SCULPTIVATE_360x640-2.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #sculptivate .portfolio-3 {
+        background: url(../img/projects/3_SCULPTIVATE/mobile_portrait/SCULPTIVATE_360x640-3.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #sculptivate .portfolio-4 {
+        background: url(../img/projects/3_SCULPTIVATE/mobile_portrait/SCULPTIVATE_360x640-4.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #invadercade .portfolio-1 {
+    background: url(../img/projects/4_INVADERCADE/mobile_portrait/INVADERCADE_360X640-1.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+    #invadercade .portfolio-2 {
+    background: url(../img/projects/4_INVADERCADE/mobile_portrait/INVADERCADE_360X640-2.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+    #invadercade .portfolio-3 {
+    background: url(../img/projects/4_INVADERCADE/mobile_portrait/INVADERCADE_360X640-3.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+    #invadercade .portfolio-4 {
+    background: url(../img/projects/4_INVADERCADE/mobile_portrait/INVADERCADE_360X640-4.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+    #sculptivate .portfolio-5 {
+        background: url(../img/projects/3_SCULPTIVATE/mobile_portrait/SCULPTIVATE_360x640-5.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #final_fantasy .portfolio-1 {
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_portrait/FFXIV_360x640-5.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #final_fantasy .portfolio-2 {
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_portrait/FFXIV_360x640-2.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #final_fantasy .portfolio-3 {
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_portrait/FFXIV_360x640-3.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #final_fantasy .portfolio-4 {
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_portrait/FFXIV_360x640-4.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #final_fantasy .portfolio-5 {
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_portrait/FFXIV_360x640-1.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #craig .portfolio-1 {
+        background: url(../img/projects/6_CRAIG/mobile_portrait/CRAIG_360X640-4.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #craig .portfolio-2 {
+        background: url(../img/projects/6_CRAIG/mobile_portrait/CRAIG_360X640-2.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #craig .portfolio-3 {
+        background: url(../img/projects/6_CRAIG/mobile_portrait/CRAIG_360X640-3.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #craig .portfolio-4 {
+        background: url(../img/projects/6_CRAIG/mobile_portrait/CRAIG_360X640-1.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+/* Mobile (portrait) ----------- */
+@media only screen and (min-width : 0px) and (max-width : 599px) and (orientation : landscape) {
+
+    .hp-details {
+        width: 60%;
+        margin: auto;
+        vertical-align: middle;
+    }
+
+    #ben_eine .portfolio-1 {
+        background: url(../img/projects/2_EINE/mobile_landscape/EINE_360x640-L1.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #ben_eine .portfolio-2 {
+        background: url(../img/projects/2_EINE/mobile_landscape/EINE_360x640-L2.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #ben_eine .portfolio-3 {
+        background: url(../img/projects/2_EINE/mobile_landscape/EINE_360x640-L3.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #ben_eine .portfolio-4 {
+        background: url(../img/projects/2_EINE/mobile_landscape/EINE_360x640-L4.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #ben_eine .portfolio-5 {
+        background: url(../img/projects/2_EINE/mobile_landscape/EINE_360x640-L5.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #sculptivate .portfolio-1 {
+        background: url(../img/projects/3_SCULPTIVATE/mobile_landscape/SCULPTIVATE_360x640-L1.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #sculptivate .portfolio-2 {
+        background: url(../img/projects/3_SCULPTIVATE/mobile_landscape/SCULPTIVATE_360x640-L2.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #sculptivate .portfolio-3 {
+        background: url(../img/projects/3_SCULPTIVATE/mobile_landscape/SCULPTIVATE_360x640-L3.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #sculptivate .portfolio-4 {
+        background: url(../img/projects/3_SCULPTIVATE/mobile_landscape/SCULPTIVATE_360x640-L4.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #sculptivate .portfolio-5 {
+        background: url(../img/projects/3_SCULPTIVATE/mobile_landscape/SCULPTIVATE_360x640-L5.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #invadercade .portfolio-1 {
+        background: url(../img/projects/4_INVADERCADE/mobile_landscape/INVADERCADE_360X640-L1.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #invadercade .portfolio-2 {
+        background: url(../img/projects/4_INVADERCADE/mobile_landscape/INVADERCADE_360X640-L2.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #invadercade .portfolio-3 {
+        background: url(../img/projects/4_INVADERCADE/mobile_landscape/INVADERCADE_360X640-L3.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #invadercade .portfolio-4 {
+        background: url(../img/projects/4_INVADERCADE/mobile_landscape/INVADERCADE_360X640-L4.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #final_fantasy .portfolio-1 {
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_landscape/FFXIV_360x640-L5.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #final_fantasy .portfolio-2 {
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_landscape/FFXIV_360x640-L2.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #final_fantasy .portfolio-3 {
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_landscape/FFXIV_360x640-L3.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #final_fantasy .portfolio-4 {
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_landscape/FFXIV_360x640-L4.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #final_fantasy .portfolio-5 {
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_landscape/FFXIV_360x640-L1.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #craig .portfolio-1 {
+        background: url(../img/projects/6_CRAIG/mobile_landscape/CRAIG_360x640-L4.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #craig .portfolio-2 {
+        background: url(../img/projects/6_CRAIG/mobile_landscape/CRAIG_360x640-L2.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #craig .portfolio-3 {
+       background: url(../img/projects/6_CRAIG/mobile_landscape/CRAIG_360x640-L3.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #craig .portfolio-4 {
+        background: url(../img/projects/6_CRAIG/mobile_landscape/CRAIG_360x640-L1.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .pjt-info {
+        overflow: hidden;
+    }
+    .pjt-info p {
+        font-size: 0.8rem;
+    }
+    .mm-info {
+        overflow: hidden;
+    }
+}
+
+/* Tablets (portrait) ----------- */
+@media only screen and (min-width : 600px) and (max-width : 799px) {
+
+    .hp-details {
+        width: 80%;
+        margin: auto;
+        vertical-align: middle;
+    }
+    .hpd-tagline {
+        font-size:1rem;
+    }
+    .hpd-email-cta {
+        font-size: 1rem;
+    }
+
+    #ben_eine .pjt-details {
+        width: 60%;
+    }
+
+    #sculptivate .pjt-details {
+        width: 90%;
+    }
+
+    #final_fantasy .pjt-details {
+        width: 90%;
+    }
+
+    #invadercade .pjt-details {
+        width: 90%;
+    }
+
+    #craig .pjt-details {
+        width: 60%;
+    }
+
+    .carousel-nav {
+        bottom: 1rem;
+        font-size: 0.8rem;
+    }
+    .carousel-nav a.prev {
+        left: 1rem;
+    }
+    .carousel-nav a.next {
+        right: 1rem;
+    }
+
+}
+
+/* Tablets (landscape) ----------- */
+@media only screen and (min-width : 800px) and (max-width : 1024px) {
+
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

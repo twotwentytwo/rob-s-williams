@@ -1,8 +1,10 @@
-define(["../vendor/jquery-1.10.2.min", "info", "menu", "jquery.scroll_to", "jquery.snapscroll", "responsive-carousel", "template"], function($, info, menu, scroll_to, snapscroll, responsivecarousel, template) {
+define(["../vendor/jquery-1.10.2.min", "info", "menu", "jquery.mousewheel", "jquery.event.move", "jquery.event.swipe", "jquery.snappish", "responsive-carousel", "template"], function($, info, menu, mousewheel, move, swipe, snappish, responsivecarousel, template) {
 	menu.init();
 	info.init();
-	scroll_to;
-	snapscroll;
+	mousewheel; 
+	move; 
+	swipe;
+	snappish;
 	responsivecarousel;
 	template;
 });

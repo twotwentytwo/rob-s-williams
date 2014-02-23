@@ -6,6 +6,21 @@
  * Copyright (c) 2012 Filament Group, Inc.
  * Licensed under the MIT, GPL licenses.
 */
+
+.carousel {
+	width: 100%;
+	position: relative;
+}
+.carousel .carousel-item {
+	display: none;
+}
+.carousel .carousel-active {
+	display: block;
+}
+.carousel .carousel-nav:nth-child(2) {
+	display: none;
+}
+
 .carousel-slide {
 	position: relative;
 	overflow: hidden;

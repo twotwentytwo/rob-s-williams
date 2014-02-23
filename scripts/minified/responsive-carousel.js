@@ -149,6 +149,7 @@
 				$from.removeClass( outClass + " " + activeClass );
 				$to.removeClass( inClass ).addClass( activeClass );
 				$( this )[ pluginName ]( "_addNextPrevClasses" );
+				//event.stopPropagation();
 			},
 
 			_bindEventListeners: function(){
@@ -168,7 +169,7 @@
 				var $nav, $this = $( this ), $items, $active;
 
 				$nav = $("<nav class='"+ navClass +"'>" +
-					"<a href='#prev' class='prev' aria-hidden='true' title='Previous'>Prev</a>" +
+					"<a href='#prev' class='prev' aria-hidden='true' title='Previous'>Previous</a>" +
 					"<a href='#next' class='next' aria-hidden='true' title='Next'>Next</a>" +
 					"</nav>");
 

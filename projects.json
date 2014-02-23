@@ -13,7 +13,8 @@
 			"3" : "http://rob-s-williams.com/development/img/projects/2_EINE/BENEINE-3.jpg",
 			"4" : "http://rob-s-williams.com/development/img/projects/2_EINE/BENEINE-4.jpg",
 			"5" : "http://rob-s-williams.com/development/img/projects/2_EINE/BENEINE-5.jpg"
-		}
+		}, 
+		"video" : null
 	}, 
 	{
 		"id": 2, 
@@ -29,32 +30,41 @@
 			"3" : "http://rob-s-williams.com/development/img/projects/3_SCULPTIVATE/SCULPTIVATE-3.jpg",
 			"4" : "http://rob-s-williams.com/development/img/projects/3_SCULPTIVATE/SCULPTIVATE-4.jpg",
 			"5" : "http://rob-s-williams.com/development/img/projects/3_SCULPTIVATE/SCULPTIVATE-5.jpg" 
-		}
-	}, 
+		}, 
+		"video" : null
+	},
 	{
 		"id": 3, 
-		"name": "Final Fantasy XIV", 
-		"name_identifer": "final_fantasy", 
-		"title_graphic": "http://rob-s-williams.com/development/img/projects/5_FINAL_FANTASY/FINAL_FANTASY.png", 
-		"category": "Commercials", 
-		"description": "<p>Final Fantasy XIV is the latest instalment of one of the world’s best know and  loved video games. This project ran for over two years with several concepts being created and produced.</p><p>FFXIV is a Massively Multiplayer Online Role Playing Game (or MMORPG for short), it is this multiplayer feature that makes it unique from previous instalments. It is also a ground-breaking game as it is a ‘cross-platform’ release playable online on PS3 and PC systems.</p><p>The client wanted a cinematic realism to the campaign as the games are so movie-like and were keen to not show any games footage or cut scenes in the TVC (as is traditional in video game advertising).</p>", 
-		"link": "http://finalfantasyxiv.com", 
-		"images" : {
-			"1" : "http://rob-s-williams.com/development/img/projects/5_FINAL_FANTASY/FINAL_FANTASY-1.jpg"
-			}, 
-		"video" : "//player.vimeo.com/video/36101977"
-	}, 
-	{
-		"id": 4, 
 		"name": "Invadercade", 
 		"name_identifer": "invadercade", 
 		"title_graphic": "http://rob-s-williams.com/development/img/projects/4_INVADERCADE/INVADERCADE.png", 
-		"category": "", 
-		"description": "<p>We were asked by Taito (creators of classic arcade Space Invaders) to develop a promotional film for the launch of Invadercade - the worlds first iPad dock arcade machine. The film had to be interesting, informative, fun and memorable.</p><p>Instead of going down the route of an ‘infomercial’ I found inspiration in the 1970-80s, the period that Space Invaders originated in. After watching a few ‘vintage’ YouTube clips of Tomorrow’s World - the TV gadget show seemed the perfect fit for the level of product information we had to convey. I created a script and storyboard for ‘Tomorrow’s Way Today’  (or ‘TWT’), cast appropriate presenters, commissioned a suitably retro TV set build  and directed on the day.</p>", 
+		"category": "Art Direction &amp; Film", 
+		"description": "<p>We were asked by Taito (creators of classic arcade Space Invaders) to develop a promotional film for the launch of Invadercade - the worlds first iPad dock arcade machine. The film had to be interesting, informative, fun and memorable.</p><p>Instead of going down the route of an ‘infomercial’ I found inspiration in the 1970-80s, the period that Space Invaders originated in. After watching a few ‘vintage’ YouTube clips of Tomorrow’s World - the TV gadget show seemed the perfect fit for the level of product information we had to convey. I created a script and storyboard for ‘Tomorrow’s Way Today’  (or ‘TWT’), cast appropriate presenters, commissioned a suitably retro TV set build  and directed on the day.</p><p><a href='http://vimeo.com/84179299' target='_blank'>View video</a></p>", 
 		"link": "", 
 		"images" : {
-			"1" : "http://rob-s-williams.com/development/img/projects/4_INVADERCADE/INVADERCADE-1.jpg"
-		}
+			"1" : "http://rob-s-williams.com/development/img/projects/4_INVADERCADE/INVADERCADE-1.jpg", 
+			"2" : "http://rob-s-williams.com/development/img/projects/4_INVADERCADE/INVADERCADE-2.jpg", 
+			"3" : "http://rob-s-williams.com/development/img/projects/4_INVADERCADE/INVADERCADE-3.jpg", 
+			"4" : "http://rob-s-williams.com/development/img/projects/4_INVADERCADE/INVADERCADE-4.jpg"
+		}, 
+		"video" : "null"
+	},  
+	{
+		"id": 4, 
+		"name": "Final Fantasy XIV", 
+		"name_identifer": "final_fantasy", 
+		"title_graphic": "http://rob-s-williams.com/development/img/projects/5_FINAL_FANTASY/FINAL_FANTASY.png", 
+		"category": "Art Direction &amp; Film", 
+		"description": "<p>Final Fantasy XIV is the latest instalment of one of the world’s best know and  loved video games. This project ran for over two years with several concepts being created and produced.</p><p>FFXIV is a Massively Multiplayer Online Role Playing Game (or MMORPG for short), it is this multiplayer feature that makes it unique from previous instalments. It is also a ground-breaking game as it is a ‘cross-platform’ release playable online on PS3 and PC systems.</p><p><a href='http://vimeo.com/84179298' target='_blank'>View video</a></p>", 
+		"link": "http://finalfantasyxiv.com", 
+		"images" : {
+			"1" : "http://rob-s-williams.com/development/img/projects/5_FINAL_FANTASY/FINAL_FANTASY-1.jpg", 
+			"2" : "http://rob-s-williams.com/development/img/projects/5_FINAL_FANTASY/FINAL_FANTASY-2.jpg",
+			"3" : "http://rob-s-williams.com/development/img/projects/5_FINAL_FANTASY/FINAL_FANTASY-3.jpg",
+			"4" : "http://rob-s-williams.com/development/img/projects/5_FINAL_FANTASY/FINAL_FANTASY-4.jpg",
+			"5" : "http://rob-s-williams.com/development/img/projects/5_FINAL_FANTASY/FINAL_FANTASY-5.jpg"
+			}, 
+		"video" : null
 	}, 
 	{
 		"id": 5, 
@@ -69,6 +79,7 @@
 			"2" : "http://rob-s-williams.com/development/img/projects/6_CRAIG/CRAIG-2.jpg",
 			"3" : "http://rob-s-williams.com/development/img/projects/6_CRAIG/CRAIG-3.jpg",
 			"4" : "http://rob-s-williams.com/development/img/projects/6_CRAIG/CRAIG-4.jpg"
-		}
+		}, 
+		"video" : null
 	}
 ]
