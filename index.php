@@ -14,8 +14,23 @@ $projects = json_decode($data);
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Rob S Williams - Graphic Designer</title>
-        <meta name="description" content="Portfolio for Rob S Williams">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Portfolio for Rob S Williams" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+        <!-- for Facebook -->          
+        <meta property="og:title" content="Rob S Williams - Graphic Designer" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="http://rob-s-williams.com/img/projects/2_EINE/BENEINE-1.jpg" />
+        <meta property="og:url" content="http://rob-s-williams.com/" />
+        <meta property="og:description" content="Portfolio for a creative, passionate, enthusiastic, motivational Graphic Designer with ten years experience. " />
+
+        <!-- for Twitter -->          
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Rob S Williams - Graphic Designer" />
+        <meta name="twitter:description" content="http://rob-s-williams.com/img/projects/2_EINE/BENEINE-1.jpg" />
+        <meta name="twitter:image" content="Portfolio for a creative, passionate, enthusiastic, motivational Graphic Designer with ten years experience. " />
+
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="favicon.ico">
@@ -114,7 +129,7 @@ $projects = json_decode($data);
                                     <h3><?=$project->name ?> - <?=$project->category ?></h3>
                                     <?=$project->description ?>
                                     <? if($project->link !== null) : ?>
-                                        <p><a href="<?=$project->link ?>" target="_blank"><?= str_replace("http://", "", $project->link) ?></p>
+                                        <p><a href="<?=$project->link ?>" target="_blank"><?= str_replace("http://", "", $project->link) ?></a></p>
                                     <? endif; ?>
                                     <p><a href="#" class="pi-close">Close</a></p>
                                 </div>

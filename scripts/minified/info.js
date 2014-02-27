@@ -43,9 +43,9 @@ define(["jquery"], function($) {
                 info_panel = '#' + $(this).closest('.project').attr('id') + ' ' + project_info_container;
 	  			var projectinfo = $(info_panel);
 			    if (projectinfo.hasClass('visible')){
-			        projectinfo.animate({"left":"-400px"}, "fast");
+			        projectinfo.animate({"left":"-1000px"}, "fast").removeClass('visible');
 			    } else {
-			        projectinfo.animate({"left":"0px"}, "fast");
+			        projectinfo.animate({"left":"0px"}, "fast").addClass('visible');
 			    }
 			});
         }, 
@@ -56,7 +56,7 @@ define(["jquery"], function($) {
         closeMenu : function(project_info_container, project_close_link) {
             $(project_close_link).on("click", function(e) {
                 if (e.preventDefault) { e.preventDefault(); } else { e.returnValue = false; }   
-                $(project_info_container).animate({"left":"-1000px"}, "fast");
+                $(project_info_container).animate({"left":"-1000px"}, "fast").removeClass('visible');
             });
         }
     };
