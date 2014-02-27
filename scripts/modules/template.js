@@ -1,6 +1,4 @@
 define(["jquery"], function($) {
-	
-	//$(".rw-content").snapscroll();
 
     $(".carousel").carousel();
 	
@@ -14,7 +12,7 @@ define(["jquery"], function($) {
 		data.fromSlide.removeClass('activated');
 	});
 
-	$('nav a').on('click', function(e) {
+	$('.vertical-carousel-navigation a').on('click', function(e) {
 		e.preventDefault();
 		$snappish.trigger('scrollto.snappish', $(this).data('slide-num'));
 	});
@@ -34,10 +32,9 @@ define(["jquery"], function($) {
 		$snappish.trigger('scrollto.snappish', $(this).data('slide-num'));
 	});
 
-	$('.pm-item a').on('click', function(e) {
+	$('.pm-next-project').on('click', function(e) {
 		e.preventDefault();
 		$snappish.trigger('scrollto.snappish', $(this).data('slide-num'));
 	});
-
 	
 });

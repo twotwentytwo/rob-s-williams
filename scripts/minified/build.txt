@@ -9,5 +9,7 @@ jquery.event.move.js
 jquery.event.swipe.js
 jquery.snappish.js
 responsive-carousel.js
+responsive-carousel.drag.js
+responsive-carousel.touch.js
 template.js
 bootstrap.js

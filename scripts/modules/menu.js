@@ -55,8 +55,6 @@ define(["jquery"], function($) {
             );
 
             this.closeInfoPanel(this.settings.mainmenu_info, this.settings.mainmenu_close);
-
-        	//this.scrollToTopOfNextProject(this.settings.mainmenu_projects, this.settings.projects_start, this.settings.context);
         },
 
         /**
@@ -71,7 +69,7 @@ define(["jquery"], function($) {
                 $(mainmenu_about_panel).hide();
                 // make an object of the info panel
                 var mainmenu_info_panel = $(mainmenu_info);
-                mainmenu_info_panel.animate({"left":"0px"}, "slow").addClass('visible');
+                mainmenu_info_panel.animate({"left":"0px"}, "fast");
                 $(mainmenu_projects_panel).fadeIn(1000);
             });
         }, 
@@ -85,7 +83,7 @@ define(["jquery"], function($) {
                 $(mainmenu_projects_panel).hide();
                 $(mainmenu_contact_panel).hide();
                 var mainmenu_info_panel = $(mainmenu_info);
-                mainmenu_info_panel.animate({"left":"0px"}, "slow").addClass('visible');
+                mainmenu_info_panel.animate({"left":"0px"}, "fast");
                 $(mainmenu_about_panel).fadeIn(1000);
 			});
         }, 
@@ -99,7 +97,7 @@ define(["jquery"], function($) {
                 $(mainmenu_about_panel).hide();
                 $(mainmenu_projects_panel).hide();
                 var mainmenu_info_panel = $(mainmenu_info);
-                mainmenu_info_panel.animate({"left":"0px"}, "slow").addClass('visible');
+                mainmenu_info_panel.animate({"left":"0px"}, "fast");
                 $(mainmenu_contact_panel).fadeIn();
             });
         }, 
@@ -111,24 +109,9 @@ define(["jquery"], function($) {
             $(mainmenu_close).on("click", function(e) {
                 if (e.preventDefault) { e.preventDefault(); } else { e.returnValue = false; }
                 var mainmenu_info_panel = $(mainmenu_info);
-                mainmenu_info_panel.animate({"left":"-1000px"}, "slow").removeClass('visible');
+                mainmenu_info_panel.animate({"left":"-1000px"}, "fast");
             });
-        }//,
-
-        /**
-     	 * scrollToTopOfNextProject
-     	 */
-        /*scrollToTopOfNextProject : function (mainmenu_projects, projects_start, context) {	  
-        	$(mainmenu_projects).on("click", function(e) {
-        		if (e.preventDefault) { e.preventDefault(); } else { e.returnValue = false; }
-				context.animate({
-					scrollTop: $(projects_start).offset().top
-				}, 500, function () {
-					window.location.hash = projects_start;
-				});
-				return false;
-			});
-        }*/
+        }
     };
 
     return {

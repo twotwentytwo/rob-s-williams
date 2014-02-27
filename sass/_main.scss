@@ -222,6 +222,7 @@ img {
 .homepage {
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 .mm-info {
@@ -244,7 +245,7 @@ img {
 }
 
 .pc-projects {
-    list-style: none;
+    list-style:none;
     padding:0;
     margin:0;
 }
@@ -255,6 +256,10 @@ img {
 
 .pc-project a {
     text-decoration: none;
+}
+
+.pc-project a:hover {
+    text-decoration: underline;
 }
 
 .mm-close {
@@ -296,6 +301,10 @@ img {
     font-size: 1.4em;
 }
 
+.hpd-email-cta span {
+    font-weight: 600;
+}
+
 .hpd-view-projects {
     position: absolute;
     bottom: 8rem;
@@ -321,6 +330,10 @@ img {
     left: 0;
     right: 0;
     margin: 0 auto;
+}
+
+.cc-socialmedialinks .sml-item {
+    line-height: 1.8rem;
 }
 
 /* Projects */
@@ -533,7 +546,7 @@ img {
 }
 
 #final_fantasy .portfolio-2 {
-    background: url(../img/projects/5_FINAL_FANTASY/FINAL_FANTASY-2.jpg) no-repeat center center scroll;
+    background: url(../img/projects/5_FINAL_FANTASY/FINAL_FANTASY-1.jpg) no-repeat center center scroll;
         -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -541,7 +554,7 @@ img {
 }
 
 #final_fantasy .portfolio-3 {
-    background: url(../img/projects/5_FINAL_FANTASY/FINAL_FANTASY-3.jpg) no-repeat center center scroll;
+    background: url(../img/projects/5_FINAL_FANTASY/FINAL_FANTASY-2.jpg) no-repeat center center scroll;
         -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -549,7 +562,7 @@ img {
 }
 
 #final_fantasy .portfolio-4 {
-    background: url(../img/projects/5_FINAL_FANTASY/FINAL_FANTASY-4.jpg) no-repeat center center scroll;
+    background: url(../img/projects/5_FINAL_FANTASY/FINAL_FANTASY-3.jpg) no-repeat center center scroll;
         -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -557,7 +570,7 @@ img {
 }
 
 #final_fantasy .portfolio-5 {
-    background: url(../img/projects/5_FINAL_FANTASY/FINAL_FANTASY-1.jpg) no-repeat center center scroll;
+    background: url(../img/projects/5_FINAL_FANTASY/FINAL_FANTASY-4.jpg) no-repeat center center scroll;
         -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -616,14 +629,14 @@ img {
     background-size: cover;
 }
 #craig .portfolio-2 {
-    background: url(../img/projects/6_CRAIG/CRAIG-2.jpg) no-repeat center center scroll;
+    background: url(../img/projects/6_CRAIG/CRAIG-3.jpg) no-repeat center center scroll;
         -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 #craig .portfolio-3 {
-    background: url(../img/projects/6_CRAIG/CRAIG-3.jpg) no-repeat center center scroll;
+    background: url(../img/projects/6_CRAIG/CRAIG-2.jpg) no-repeat center center scroll;
         -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -636,6 +649,54 @@ img {
     -o-background-size: cover;
     background-size: cover;
 }
+
+
+#fallout .pjt-details {
+    width: 454px;
+    height: 78px;
+    background: url(../img/projects/7_FALLOUT/FALLOUT.png) 0 0 no-repeat;
+}
+
+#fallout .portfolio-1 {
+    background: url(../img/projects/7_FALLOUT/FALLOUT-1.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#fallout .portfolio-2 {
+    background: url(../img/projects/7_FALLOUT/FALLOUT-2.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#fallout .portfolio-3 {
+    background: url(../img/projects/7_FALLOUT/FALLOUT-3.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#fallout .portfolio-4 {
+    background: url(../img/projects/7_FALLOUT/FALLOUT-4.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#fallout .portfolio-5 {
+    background: url(../img/projects/7_FALLOUT/FALLOUT-5.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 
 /* videos */
 
@@ -658,6 +719,11 @@ img {
     color: #000;
     position: absolute;
     bottom: 0;
+}
+
+#fallout .carousel-nav a, 
+#final_fantasy .carousel-nav a {
+    color: #fff;
 }
 .carousel-nav a.prev {
     left: 3.6rem;
@@ -931,14 +997,14 @@ img {
     .mm-info .about-content, 
     .mm-info .contact-content, 
     .mm-info .projects-content {
-        padding-top: 8rem;
+        padding-top: 6rem;
         padding-left: 1rem;
         padding-right: 2rem;
         padding-bottom: 2rem;
     }
     .mm-info p, 
     .mm-info li {
-        font-size: 0.8rem;
+        font-size: 10px;
     }
     .mm-close {
         left: 1rem;
@@ -955,16 +1021,18 @@ img {
         width: 100%;
     }
     .pjt-info-content {
-        padding-top: 8rem;
+        padding-top: 6rem;
         padding-left: 1rem;
         padding-right: 2rem;
         padding-bottom: 2rem;
     }
+    .pjt-info h3 {
+        font-size: 10px;
+    }
     .pjt-info p {
         padding-bottom: 0.8rem;
-        font-size: 0.8rem;
+        font-size: 10px;
     }
-
     .carousel-nav {
         bottom: 1rem;
         font-size: 0.8rem;
@@ -1005,35 +1073,11 @@ img {
         height: 50px;
         background: url(../img/projects/6_CRAIG/CRAIG_340px.png) 0 0 no-repeat;
     }
-}
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width : 480px) and (max-width : 599px) {
-    .rw-main-menu .mm-item {
-        font-size: 1rem;
-    }
-    h3 {
-        font-size: 1rem; 
-    }
-    .hpd-tagline {
-        font-size: 1rem;
-    }
-    .hpd-email-cta {
-        font-size: 1rem;
-    }
-    .hpd-view-projects {
-        font-size: 1rem;
-    }
-    .pjt-menu .pm-item {
-        font-size: 1rem;
-    }
-    .pjt-info p {
-        padding-bottom: 1rem;
-        font-size: 1rem;
-    }
-    .mm-info p, 
-    .mm-info li {
-        font-size: 1rem;
+    #fallout .pjt-details {
+        width: 170px;
+        height: 105px;
+        background: url(../img/projects/7_FALLOUT/FALLOUT_340px.png) 0 0 no-repeat;
     }
 }
 
@@ -1108,35 +1152,35 @@ img {
     }
 
     #invadercade .portfolio-1 {
-    background: url(../img/projects/4_INVADERCADE/mobile_portrait/INVADERCADE_360X640-1.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+        background: url(../img/projects/4_INVADERCADE/mobile_portrait/INVADERCADE_360X640-1.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
     #invadercade .portfolio-2 {
-    background: url(../img/projects/4_INVADERCADE/mobile_portrait/INVADERCADE_360X640-2.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+        background: url(../img/projects/4_INVADERCADE/mobile_portrait/INVADERCADE_360X640-2.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
     #invadercade .portfolio-3 {
-    background: url(../img/projects/4_INVADERCADE/mobile_portrait/INVADERCADE_360X640-3.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+        background: url(../img/projects/4_INVADERCADE/mobile_portrait/INVADERCADE_360X640-3.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
     #invadercade .portfolio-4 {
-    background: url(../img/projects/4_INVADERCADE/mobile_portrait/INVADERCADE_360X640-4.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+        background: url(../img/projects/4_INVADERCADE/mobile_portrait/INVADERCADE_360X640-4.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
     #sculptivate .portfolio-5 {
@@ -1156,30 +1200,6 @@ img {
     }
 
     #final_fantasy .portfolio-2 {
-        background: url(../img/projects/5_FINAL_FANTASY/mobile_portrait/FFXIV_360x640-2.jpg) no-repeat center center scroll;
-            -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
-    #final_fantasy .portfolio-3 {
-        background: url(../img/projects/5_FINAL_FANTASY/mobile_portrait/FFXIV_360x640-3.jpg) no-repeat center center scroll;
-            -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
-    #final_fantasy .portfolio-4 {
-        background: url(../img/projects/5_FINAL_FANTASY/mobile_portrait/FFXIV_360x640-4.jpg) no-repeat center center scroll;
-            -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
-    #final_fantasy .portfolio-5 {
         background: url(../img/projects/5_FINAL_FANTASY/mobile_portrait/FFXIV_360x640-1.jpg) no-repeat center center scroll;
             -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -1187,6 +1207,31 @@ img {
         background-size: cover;
     }
 
+    #final_fantasy .portfolio-3 {
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_portrait/FFXIV_360x640-2.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #final_fantasy .portfolio-4 {
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_portrait/FFXIV_360x640-3.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #final_fantasy .portfolio-5 {
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_portrait/FFXIV_360x640-4.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    
     #craig .portfolio-1 {
         background: url(../img/projects/6_CRAIG/mobile_portrait/CRAIG_360X640-4.jpg) no-repeat center center scroll;
             -webkit-background-size: cover;
@@ -1195,14 +1240,14 @@ img {
         background-size: cover;
     }
     #craig .portfolio-2 {
-        background: url(../img/projects/6_CRAIG/mobile_portrait/CRAIG_360X640-2.jpg) no-repeat center center scroll;
+        background: url(../img/projects/6_CRAIG/mobile_portrait/CRAIG_360X640-3.jpg) no-repeat center center scroll;
             -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
     #craig .portfolio-3 {
-        background: url(../img/projects/6_CRAIG/mobile_portrait/CRAIG_360X640-3.jpg) no-repeat center center scroll;
+        background: url(../img/projects/6_CRAIG/mobile_portrait/CRAIG_360X640-2.jpg) no-repeat center center scroll;
             -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -1210,6 +1255,46 @@ img {
     }
     #craig .portfolio-4 {
         background: url(../img/projects/6_CRAIG/mobile_portrait/CRAIG_360X640-1.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #fallout .portfolio-1 {
+        background: url(../img/projects/7_FALLOUT/mobile_portrait/FALLOUT_360X640-1.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #fallout .portfolio-2 {
+        background: url(../img/projects/7_FALLOUT/mobile_portrait/FALLOUT_360X640-2.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #fallout .portfolio-3 {
+        background: url(../img/projects/7_FALLOUT/mobile_portrait/FALLOUT_360X640-3.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #fallout .portfolio-4 {
+        background: url(../img/projects/7_FALLOUT/mobile_portrait/FALLOUT_360X640-4.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #fallout .portfolio-5 {
+        background: url(../img/projects/7_FALLOUT/mobile_portrait/FALLOUT_360X640-5.jpg) no-repeat center center scroll;
             -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -1343,7 +1428,7 @@ img {
     }
 
     #final_fantasy .portfolio-2 {
-        background: url(../img/projects/5_FINAL_FANTASY/mobile_landscape/FFXIV_360x640-L2.jpg) no-repeat center center scroll;
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_landscape/FFXIV_360x640-L1.jpg) no-repeat center center scroll;
             -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -1351,7 +1436,7 @@ img {
     }
 
     #final_fantasy .portfolio-3 {
-        background: url(../img/projects/5_FINAL_FANTASY/mobile_landscape/FFXIV_360x640-L3.jpg) no-repeat center center scroll;
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_landscape/FFXIV_360x640-L2.jpg) no-repeat center center scroll;
             -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -1359,7 +1444,7 @@ img {
     }
 
     #final_fantasy .portfolio-4 {
-        background: url(../img/projects/5_FINAL_FANTASY/mobile_landscape/FFXIV_360x640-L4.jpg) no-repeat center center scroll;
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_landscape/FFXIV_360x640-L3.jpg) no-repeat center center scroll;
             -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -1367,7 +1452,7 @@ img {
     }
 
     #final_fantasy .portfolio-5 {
-        background: url(../img/projects/5_FINAL_FANTASY/mobile_landscape/FFXIV_360x640-L1.jpg) no-repeat center center scroll;
+        background: url(../img/projects/5_FINAL_FANTASY/mobile_landscape/FFXIV_360x640-L4.jpg) no-repeat center center scroll;
             -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -1382,14 +1467,14 @@ img {
         background-size: cover;
     }
     #craig .portfolio-2 {
-        background: url(../img/projects/6_CRAIG/mobile_landscape/CRAIG_360x640-L2.jpg) no-repeat center center scroll;
+        background: url(../img/projects/6_CRAIG/mobile_landscape/CRAIG_360x640-L3.jpg) no-repeat center center scroll;
             -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
     #craig .portfolio-3 {
-       background: url(../img/projects/6_CRAIG/mobile_landscape/CRAIG_360x640-L3.jpg) no-repeat center center scroll;
+       background: url(../img/projects/6_CRAIG/mobile_landscape/CRAIG_360x640-L2.jpg) no-repeat center center scroll;
             -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -1401,9 +1486,52 @@ img {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+    } 
+
+        #fallout .portfolio-1 {
+        background: url(../img/projects/7_FALLOUT/mobile_landscape/FALLOUT_360x640-L1.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #fallout .portfolio-2 {
+        background: url(../img/projects/7_FALLOUT/mobile_landscape/FALLOUT_360X640-L2.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #fallout .portfolio-3 {
+        background: url(../img/projects/7_FALLOUT/mobile_landscape/FALLOUT_360X640-L3.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #fallout .portfolio-4 {
+        background: url(../img/projects/7_FALLOUT/mobile_landscape/FALLOUT_360X640-L4.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #fallout .portfolio-5 {
+        background: url(../img/projects/7_FALLOUT/mobile_landscape/FALLOUT_360X640-L5.jpg) no-repeat center center scroll;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
     .pjt-info {
         overflow: hidden;
+    }
+    .pjt-info h3 {
+        font-size: 0.8rem;
     }
     .pjt-info p {
         font-size: 0.8rem;

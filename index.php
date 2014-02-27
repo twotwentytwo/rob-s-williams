@@ -12,14 +12,13 @@ $projects = json_decode($data);
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Rob S Williams - Graphic Designer</title>
         <meta name="description" content="Portfolio for Rob S Williams">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- no follow -->
-        <meta name="robots" content="nofollow" />
+
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="favicon.ico">
         <link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
         <script src="scripts/vendor/modernizr-2.6.2.min.js"></script>
         <!--
@@ -40,6 +39,7 @@ $projects = json_decode($data);
                 <li><a href="#" data-slide-num="3" class=""></a></li>
                 <li><a href="#" data-slide-num="4" class=""></a></li>
                 <li><a href="#" data-slide-num="5" class=""></a></li>
+                <li><a href="#" data-slide-num="6" class=""></a></li>
             </ul>
         </nav>
         
@@ -48,18 +48,19 @@ $projects = json_decode($data);
                 <li class="rw-page slide-1 snappish-slide activated">
                     <div class="homepage">
                         <ul class="rw-main-menu">
-                            <li class="mm-item"><a href="#" class="i-projects" data-slide-num="1">Projects</a></li>
+                            <li class="mm-item"><a href="#" class="i-projects">Projects</a></li>
                             <li class="mm-item"><a href="#" class="i-about">About</a></li>
                             <li class="mm-item"><a href="#" class="i-contact">Contact</a></li>
                         </ul>
                         <div class="mm-info">
                             <div class="projects-content">
                                 <ul class="pc-projects">
-                                    <li class="pc-project"><a href="#" data-slide-num="1">Ben Eine - Identity</a></li>
-                                    <li class="pc-project"><a href="#" data-slide-num="2">Sculptivate - Identity</a></li>
-                                    <li class="pc-project"><a href="#" data-slide-num="3">Invadercade - Art direction &amp; Film</a></li>
-                                    <li class="pc-project"><a href="#" data-slide-num="4">Final Fantasy XIV - Art direction &amp; Film</a></li>
-                                    <li class="pc-project"><a href="#" data-slide-num="5">Craig - Identity</a></li>
+                                    <li class="pc-project"><a href="#" data-slide-num="1">Ben Eine &mdash; Identity</a></li>
+                                    <li class="pc-project"><a href="#" data-slide-num="2">Sculptivate &mdash; Identity</a></li>
+                                    <li class="pc-project"><a href="#" data-slide-num="3">Invadercade &mdash; Art direction &amp; Film</a></li>
+                                    <li class="pc-project"><a href="#" data-slide-num="4">Final Fantasy &mdash; Advertising</a></li>
+                                    <li class="pc-project"><a href="#" data-slide-num="5">Fallout 3 &mdash; Exhibition Design</a></li>
+                                    <li class="pc-project"><a href="#" data-slide-num="6">Craig &mdash; Identity</a></li>
                                 </ul>
                             </div>
                             <div class="about-content">
@@ -76,11 +77,11 @@ $projects = json_decode($data);
                                 <p>Or call me on:<br>+44 (0)7590 603 665</p>
                                 <p>Other Rob related sites are:</p>
                                 <ul class="cc-socialmedialinks">
-                                    <li class="sml-item"><a href="https://twitter.com/rob_sc_williams">Twitter</a></li>
-                                    <li class="sml-item"><a href="http://instagram.com/mr_rob_otter">Instagram</a></li>
-                                    <li class="sml-item"><a href="http://www.pinterest.com/robscwilliams/">Pintrest</a></li>
-                                    <li class="sml-item"><a href="http://rob-s-williams.tumblr.com">Tumblr</a></li>
-                                    <li class="sml-item"><a href="http://uk.linkedin.com/in/robswilliams">LinkedIn</a></li>
+                                    <li class="sml-item"><a href="https://twitter.com/rob_sc_williams" target="_blank">Twitter</a></li>
+                                    <li class="sml-item"><a href="http://instagram.com/mr_rob_otter" target="_blank">Instagram</a></li>
+                                    <li class="sml-item"><a href="http://www.pinterest.com/robscwilliams/" target="_blank">Pintrest</a></li>
+                                    <li class="sml-item"><a href="http://rob-s-williams.tumblr.com" target="_blank">Tumblr</a></li>
+                                    <li class="sml-item"><a href="http://uk.linkedin.com/in/robswilliams" target="_blank">LinkedIn</a></li>
                                 </ul>
                             </div>
 
@@ -90,7 +91,7 @@ $projects = json_decode($data);
                         <div class="hp-details">
                             <h1><span class="visuallyhidden">Rob S Williams</span><img src="img/RSW_LOGO.png" alt="Rob S Williams" /></h1>
                             <h2 class="hpd-tagline">I’m a London based graphic designer<br/>with over ten years experience</h2>
-                            <p class="hpd-email-cta"><a href="mailto:hello@rob-s-williams.com">hello@rob-s-williams.com</a></p>
+                            <p class="hpd-email-cta"><a href="mailto:hello@rob-s-williams.com">hello<span>@</span>rob-s-williams.com</a></p>
                         </div>
 
                         <p class="hpd-view-projects"><a href="#" id="home-view-projects" class="view-projects" data-slide-num="1">View Projects</a></p>
@@ -112,7 +113,9 @@ $projects = json_decode($data);
                                 <div class="pjt-info-content">
                                     <h3><?=$project->name ?> - <?=$project->category ?></h3>
                                     <?=$project->description ?>
-                                    <p><a href="<?=$project->link ?>" target="_blank"><?= str_replace("http://", "", $project->link) ?></p>
+                                    <? if($project->link !== null) : ?>
+                                        <p><a href="<?=$project->link ?>" target="_blank"><?= str_replace("http://", "", $project->link) ?></p>
+                                    <? endif; ?>
                                     <p><a href="#" class="pi-close">Close</a></p>
                                 </div>
                             </div>
